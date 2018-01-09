@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dado - Dodecaedro</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Proyecto2n/Recursos/img/logo.png</normaloff>Proyecto2n/Recursos/img/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(Proyecto2n/Recursos/img/fondoelemento.png);
+background-repeat: no-repeat;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>50</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Dodecaedro</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pbdode">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>160</y>
+      <width>280</width>
+      <height>280</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/dode/plantilla.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnlanza">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>450</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url();
+background-color: #555555;
+color: #FFFFFF;</string>
+    </property>
+    <property name="text">
+     <string>Lanzalo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnhome">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url();
+background-color: #555555;
+color: #FFFFFF;</string>
+    </property>
+    <property name="text">
+     <string>Menú principal</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb5">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>240</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb11">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>320</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb8">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>240</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb4">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>160</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>160</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb15">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>400</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>490</y>
+      <width>391</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Ultimos 16</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb14">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>400</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb3">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>160</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb13">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>400</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb16">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>400</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb7">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>240</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>160</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;
+</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>400</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/tapete.png);
+background-repeat: no-repeat;
+border-style: none;
+background-size: 80px 60px;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb9">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>320</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb10">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>320</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb6">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>240</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="pb12">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>320</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(Proyecto2n/Recursos/img/moneda/iniciop.png);
+ border-style: none;
+background-repeat: no-repeat;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnautomatico">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>520</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url();
+background-color: #555555;
+color: #FFFFFF;</string>
+    </property>
+    <property name="text">
+     <string>Lanzalo por mi</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnestadisticas">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url();
+background-color: #555555;
+color: #FFFFFF;</string>
+    </property>
+    <property name="text">
+     <string>Estadísticas</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnreiniciarbd">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>20</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url();
+background-color: #555555;
+color: #FFFFFF;</string>
+    </property>
+    <property name="text">
+     <string>Reinciar estadísticas</string>
+    </property>
+   </widget>
+   <zorder>graphicsView</zorder>
+   <zorder>label</zorder>
+   <zorder>pbdode</zorder>
+   <zorder>btnlanza</zorder>
+   <zorder>btnhome</zorder>
+   <zorder>pb5</zorder>
+   <zorder>pb11</zorder>
+   <zorder>pb8</zorder>
+   <zorder>pb4</zorder>
+   <zorder>pb1</zorder>
+   <zorder>pb15</zorder>
+   <zorder>label_2</zorder>
+   <zorder>pb14</zorder>
+   <zorder>pb3</zorder>
+   <zorder>pb13</zorder>
+   <zorder>pb16</zorder>
+   <zorder>pb7</zorder>
+   <zorder>pb2</zorder>
+   <zorder>pb9</zorder>
+   <zorder>pb10</zorder>
+   <zorder>pb6</zorder>
+   <zorder>pb12</zorder>
+   <zorder>btnautomatico</zorder>
+   <zorder>btnestadisticas</zorder>
+   <zorder>btnreiniciarbd</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

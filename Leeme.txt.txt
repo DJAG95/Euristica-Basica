@@ -1,0 +1,21 @@
+Requisitos para ejecución:
+
+importar BD Mysql facilitada en el archivo rar:
+
+estadistica.sql
+
+Interprete Python 3.6.3
+
+* Todos los paquetes a continuación son necesarios para el correcto funcionamiento del programa *
+
+*Todas las versiones son las versiones por defecto del repositorio pip hoy a 31/10/2017*
+
+# PyQt5-tools 5.9.0.1.2
+# PyQt5 5.9
+# matplotlib 2.1
+# Pymysql 0.7.11
+
+Nombre del archivo principal para ejecutar:
+
+ejecutar.py
+
