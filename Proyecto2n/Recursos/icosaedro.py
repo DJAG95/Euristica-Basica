@@ -25,110 +25,13 @@ class Icosaedro(QMainWindow):
         self.i = 0
 
     def lanzadado(self):
-        dado = random.randint(1, 20)
-        if (dado == 1):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/1.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/1p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 2):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/2.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/2p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 3):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/3.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/3p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 4):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/4.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/4p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 5):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/5.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/5p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 6):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/6.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/6p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 7):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/7.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/7p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 8):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/8.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/8p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 9):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/9.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/9p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 10):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/10.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/10p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 11):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/11.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/11p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 12):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/12.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/12p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 13):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/13.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/13p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 14):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/14.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/14p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 15):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/15.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/15p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 16):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/16.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/16p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 17):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/17.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/17p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 18):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/18.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/18p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 19):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/19.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/19p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 20):
-            self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/20.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/ico/20p.png); border-style: none;")
-            self.i += 1
-        else:
-            print(dado)
-        self.guarda(dado)
+        icosaedro = random.randint(1, 20)
+        self.pbico.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/ico/"+icosaedro.__str__()+".png); border-style: none;")
+        self.aparecidos[self.i].setStyleSheet(
+            "background-image: url(Proyecto2n/Recursos/img/ico/"+icosaedro.__str__()+"p.png); border-style: none;")
+        self.i += 1
+
+        self.guarda(icosaedro)
         if (self.i == 16):
             self.i = 0
 
@@ -145,10 +48,10 @@ class Icosaedro(QMainWindow):
             for i in range(num):
                 self.lanzadado()
 
-    def guarda(self, dado):
+    def guarda(self, pIcosaedro):
         try:
-            self.cursor.execute("insert into dado20 values( %s, DEFAULT)", (dado))
-            print(" * Se ha insertado el icosaedro con valor " , dado , " satisfactoriamente * ")
+            self.cursor.execute("insert into dado20 values( %s, DEFAULT)", (pIcosaedro))
+            print(" * Se ha insertado el icosaedro con valor " , pIcosaedro , " satisfactoriamente * ")
             self.conn.commit()
         except:
             print(
