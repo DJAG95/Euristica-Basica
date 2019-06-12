@@ -25,59 +25,12 @@ class Barajal(QMainWindow):
         self.i = 0
 
     def lanzadado(self):
-        dado = random.randint(1, 10)
-        if (dado == 1):
-            self.pbcarta.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/barc/1.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/barc/1p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 2):
-            self.pbcarta.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/barc/2.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/barc/2p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 3):
-            self.pbcarta.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/barc/3.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/barc/3p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 4):
-            self.pbcarta.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/barc/4.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/barc/4p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 5):
-            self.pbcarta.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/barc/5.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/barc/5p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 6):
-            self.pbcarta.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/barc/6.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/barc/6p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 7):
-            self.pbcarta.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/barc/7.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/barc/7p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 8):
-            self.pbcarta.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/barc/10.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/barc/10p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 9):
-            self.pbcarta.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/barc/11.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/barc/11p.png); border-style: none;")
-            self.i += 1
-        elif (dado == 10):
-            self.pbcarta.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/barc/12.png); border-style: none;")
-            self.aparecidos[self.i].setStyleSheet(
-                "background-image: url(Proyecto2n/Recursos/img/barc/12p.png); border-style: none;")
-            self.i += 1
-        else:
-            print(dado)
+        dado = random.randint(0, 9)
+        self.pbcarta.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/barc/"+dado.__str__()+".png); border-style: none;")
+        self.aparecidos[self.i].setStyleSheet(
+            "background-image: url(Proyecto2n/Recursos/img/barc/"+dado.__str__()+"p.png); border-style: none;")
+        self.i += 1
+
         self.guarda(dado)
         if (self.i == 16):
             self.i = 0
