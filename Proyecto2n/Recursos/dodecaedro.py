@@ -25,13 +25,70 @@ class Dodecaedro(QMainWindow):
         self.i = 0
 
     def lanzadado(self):
-        dadeCaedro = random.randint(1, 12)
-        self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/"+dadeCaedro.__str__()+".png);  border-style: none;")
-        self.aparecidos[self.i].setStyleSheet(
-            "background-image: url(Proyecto2n/Recursos/img/dode/"+dadeCaedro.__str__()+"p.png); border-style: none;")
-        self.i += 1
-
-        self.guarda(dadeCaedro)
+        dado = random.randint(1, 12)
+        if (dado == 1):
+            self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/1.png);  border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/dode/1p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 2):
+            self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/2.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/dode/2p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 3):
+            self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/3.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/dode/3p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 4):
+            self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/4.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/dode/4p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 5):
+            self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/5.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/dode/5p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 6):
+            self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/6.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/dode/6p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 7):
+            self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/7.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/dode/7p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 8):
+            self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/8.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/dode/8p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 9):
+            self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/9.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/dode/9p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 10):
+            self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/10.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/dode/10p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 11):
+            self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/11.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/dode/11p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 12):
+            self.pbdode.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/dode/12.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/dode/12p.png); border-style: none;")
+            self.i += 1
+        else:
+            print(dado)
+        self.guarda(dado)
         if (self.i == 16):
             self.i = 0
 
@@ -46,10 +103,10 @@ class Dodecaedro(QMainWindow):
             for i in range(num):
                 self.lanzadado()
 
-    def guarda(self, dadeCaedro):
+    def guarda(self, dado):
         try:
-            self.cursor.execute("insert into dado12 values( %s, DEFAULT)", (dadeCaedro))
-            print(" * Se ha insertado el dodecaedro con valor ", dadeCaedro, " satisfactoriamente * ")
+            self.cursor.execute("insert into dado12 values( %s, DEFAULT)", (dado))
+            print(" * Se ha insertado el dodecaedro con valor ", dado, " satisfactoriamente * ")
             self.conn.commit()
         except:
             print(

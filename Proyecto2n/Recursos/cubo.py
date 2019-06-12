@@ -30,9 +30,38 @@ class Cubo(QMainWindow):
 
     def lanzadado(self):
         dado = random.randint(1,6)
-        self.pbdado.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/cubo/"+dado.__str__()+".png); border-style: none;")
-        self.aparecidos[self.i].setStyleSheet("background-image: url(Proyecto2n/Recursos/img/cubo/"+dado.__str__()+"p.png); border-style: none;")
-        self.i += 1
+        if (dado == 1):
+            self.pbdado.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/cubo/1.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet("background-image: url(Proyecto2n/Recursos/img/cubo/1p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 2):
+            self.pbdado.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/cubo/2.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/cubo/2p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 3):
+            self.pbdado.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/cubo/3.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/cubo/3p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 4):
+            self.pbdado.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/cubo/4.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/cubo/4p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 5):
+            self.pbdado.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/cubo/5.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/cubo/5p.png); border-style: none;")
+            self.i += 1
+        elif (dado == 6):
+            self.pbdado.setStyleSheet("background-image: url(Proyecto2n/Recursos/img/cubo/6.png); border-style: none;")
+            self.aparecidos[self.i].setStyleSheet(
+                "background-image: url(Proyecto2n/Recursos/img/cubo/6p.png); border-style: none;")
+            self.i += 1
+        else :
+            print(dado)
+
         self.guarda(dado)
         if (self.i == 16):
             self.i = 0
