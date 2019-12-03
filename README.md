@@ -1,7 +1,9 @@
-# PlayingWith-PyQt
+# PlayingWith-PyQt [ Python 3 ]
 Proyecto creado para programación de servicios y procesos
 
 En él, desarrollo una aplicación en Python que utiliza el editor de interfaces de pyqt
+
+Actualmente en mis ratos libres intento mejorarlo un poco más
 
 # Instalation Requirements
 
