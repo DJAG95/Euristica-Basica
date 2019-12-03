@@ -1,7 +1,7 @@
 import sys
 import random
 from Proyecto2n import mainqt
-from Proyecto2n.Recursos import monedapie
+from Proyecto2n.Recursos import monedapie, Constantes
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 import pymysql
@@ -13,7 +13,8 @@ class Moneda(QMainWindow):
         self.btnlanza.clicked.connect(self.lanzadado)
         self.btnhome.clicked.connect(self.home)
         try:
-            self.conn = pymysql.connect(host="localhost", port=3306, user="root", passwd="", db="estadistica")
+            self.conn = pymysql.connect(host=Constantes.host, port=Constantes.puerto, user=Constantes.user,
+                                        passwd=Constantes.passwd, db=Constantes.db)
             self.cursor = self.conn.cursor()
         except:
             print("No hay conexión a la base de datos, temporalmente las estadísticas globales estarán desactivadas")

@@ -1,6 +1,6 @@
 import sys
 import random
-from Proyecto2n.Recursos import barajacpie,barajacpiepalo
+from Proyecto2n.Recursos import barajacpie,barajacpiepalo, Constantes
 from Proyecto2n import mainqt
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
@@ -19,7 +19,8 @@ class Barajac(QMainWindow):
 
 
         try:
-            self.conn = pymysql.connect(host="localhost", port=8889, user="root", passwd="", db="estadistica")
+            self.conn = pymysql.connect(host=Constantes.host, port=Constantes.puerto, user=Constantes.user,
+                                        passwd=Constantes.passwd, db=Constantes.db)
             self.cursor = self.conn.cursor()
         except:
             print("No hay conexión a la base de datos, temporalmente las estadísticas globales estarán desactivadas")
