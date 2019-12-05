@@ -67,7 +67,7 @@ class Principal(QMainWindow):
     @staticmethod
     def ejecucion():
         app = QApplication(sys.argv)
-        splashLogo = QPixmap('Proyecto2n/Recursos/splash/fondo.png')
+        splashLogo = QPixmap('Proyecto2n/Recursos/splash/splash.png')
         splash = QSplashScreen(splashLogo, Qt.WindowStaysOnTopHint)
         splash.setMask(splashLogo.mask())
         splash.show()
@@ -78,7 +78,6 @@ class Principal(QMainWindow):
         print("D - Datos")
         print("E - Estadisticos")
         print("En consola se mostrarán datos relevantes de cara al programador, la experiencia del usuario final no se verá afectada por esta ausencia de información")
-        #sleep(1)
         vista = Principal()
         splash.finish(vista)
         vista.show()

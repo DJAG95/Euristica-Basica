@@ -1,5 +1,5 @@
-puerto = 8889
-user = "dani"
-passwd = "pythonrules"
+puerto = 3306
+user = "root"
+passwd = ""
 db = 'estadistica'
 host = 'localhost'

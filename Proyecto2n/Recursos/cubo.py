@@ -1,3 +1,4 @@
+import threading
 from Proyecto2n import mainqt
 from Proyecto2n.Recursos import cubopie, Constantes
 from PyQt5.QtWidgets import *
